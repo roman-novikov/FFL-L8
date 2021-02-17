@@ -46,7 +46,7 @@ body {
 /* --------------- */
 .page {
   font-family: Lato, sans-serif;
-  background: #fff url("../../img/content/fon.png") 0 0 no-repeat;
+  background: #fff url("../img/content/fon.png") 0 0 no-repeat;
 }
 
 .conteiner {
@@ -107,7 +107,7 @@ body {
   width: 64px;
   height: 48px;
   margin: 30px auto 10px;
-  background: #FF5722 url("../../img/icons/01.svg") center no-repeat;
+  background: #FF5722 url("../img/icons/01.svg") center no-repeat;
 }
 .main__sub-question a:hover, .main__sub-question a:focus {
   outline: none;
@@ -121,7 +121,7 @@ body {
   color: #fff;
 }
 .main__sub-question:nth-child(2n) a {
-  background: url("../../img/icons/02.svg") center no-repeat;
+  background: url("../img/icons/02.svg") center no-repeat;
   background-color: #fff;
 }
 .main__answer div {
