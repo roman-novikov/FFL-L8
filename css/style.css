@@ -1,0 +1,220 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&display=swap");
+/*----- Стили обнуления -----*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  line-height: 1;
+  color: #000;
+}
+
+/* --------------- */
+.page {
+  font-family: Lato, sans-serif;
+  background: #fff url("../../img/content/fon.png") 0 0 no-repeat;
+}
+
+.conteiner {
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+.row {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0.9em 10px;
+}
+
+.cell {
+  display: table-cell;
+  width: 33.333%;
+}
+
+.header__title {
+  margin: 0 auto;
+  max-width: 578px;
+  font-family: Lora;
+  font-size: 40px;
+  font-weight: 700;
+  color: #10375C;
+  line-height: 52px;
+  text-align: center;
+}
+.header .conteiner::before, .header .conteiner::after {
+  content: "";
+  display: block;
+  margin: 15px 0;
+  border: 1px dashed black;
+}
+
+.close {
+  color: #000;
+  display: inline-block;
+  margin: 0 0 0 95%;
+}
+
+.main__sub-question {
+  font-family: Lora;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: center;
+  color: #000;
+  padding: 45px 40px 0px 40px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.main__sub-question p::first-letter {
+  text-decoration: underline;
+}
+.main__sub-question a {
+  display: block;
+  width: 64px;
+  height: 48px;
+  margin: 30px auto 10px;
+  background: #FF5722 url("../../img/icons/01.svg") center no-repeat;
+}
+.main__sub-question a:hover, .main__sub-question a:focus {
+  outline: none;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.7);
+}
+.main__sub-question a:active {
+  box-shadow: none;
+}
+.main__sub-question:nth-child(2n) {
+  background-color: #FF5722;
+  color: #fff;
+}
+.main__sub-question:nth-child(2n) a {
+  background: url("../../img/icons/02.svg") center no-repeat;
+  background-color: #fff;
+}
+.main__answer div {
+  display: none;
+  margin: 10px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+}
+.main__answer div:nth-child(even) {
+  background-color: #FF5722;
+  color: #fff;
+}
+.main__answer div:nth-child(even)::first-line {
+  background-color: #fff;
+  color: #000;
+}
+.main__answer div:nth-child(even) .close {
+  color: #fff;
+}
+.main__answer div::first-line {
+  background-color: #000;
+  color: #fff;
+}
+.main__answer div:target {
+  display: block;
+}
+
+.footer {
+  padding-bottom: 50px;
+}
+.footer__list {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.footer__list li {
+  margin: 0 0 10px 30px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.footer__list li:last-child {
+  margin-bottom: 0;
+}
+.footer__list li::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 15px 0 -23px;
+  width: 7px;
+  height: 7px;
+  background-color: #FF5722;
+  transform: rotate(45deg);
+}
+.footer__button {
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+  margin: 0 40px;
+  padding: 10px 40px;
+  border-radius: 15px;
+  box-shadow: 0 3px 0 1px crimson;
+  background-color: #FF5722;
+}
+.footer__button::before {
+  content: "+";
+  display: inline-block;
+  margin: 0px 10px 0 0;
+  vertical-align: top;
+  font-size: 30px;
+  font-weight: 700;
+}
+.footer__button:link {
+  color: #fff;
+}
+.footer__button:visited {
+  color: #000;
+}
+.footer__button:hover {
+  background-color: #ff5622d5;
+}
+.footer__button:hover::before {
+  transform: rotate(45deg);
+}
+.footer__button:focus {
+  outline: none;
+}
+.footer .conteiner::before, .footer .conteiner::after {
+  content: "";
+  display: block;
+  margin: 15px 0;
+  border: 1px dashed black;
+}
+.footer .conteiner::after {
+  margin: 30px 0 15px 0;
+}
